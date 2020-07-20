@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+svg {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 1s font-size;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+svg rect {
+  fill: #fff;
+  mask: url(#mask);
+}
+
+// change bg color
+svg > rect {
+  fill: black;
+}
+
+@media screen and (max-width: 1200px) {
+  svg {
+    font-size: 6em;
+  }
+}
